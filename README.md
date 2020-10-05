@@ -23,6 +23,11 @@ E.G.:
 This will produce two images, the first one is normalized using the maximum and minimum pixels values like parameter
 and the second one is equalized using the histogram information
 
+# Expected results
+## Input example
+	![Input example: balloons.ascii.pgm](samples/balloons.ascii.pgm "Title")
+
+
 # Suported Image Types
 
 ### Curremente we only have suport for PGM image format.
