@@ -24,9 +24,7 @@ This will produce two images, the first one is normalized using the maximum and 
 and the second one is equalized using the histogram information
 
 # Expected results
-## Input example
-	![Alt text](https://github.com/y9luiz/MyImageProcessLibrary/blob/main/samples/balloons.ascii.pgm)
-
+You could find samples at the samples folder and the expected outputs in the samples/expected_outputs
 
 # Suported Image Types
 
