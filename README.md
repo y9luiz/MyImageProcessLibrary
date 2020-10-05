@@ -25,7 +25,7 @@ and the second one is equalized using the histogram information
 
 # Expected results
 ## Input example
-	![Input example: balloons.ascii.pgm](samples/balloons.ascii.pgm "Title")
+	![Screenshot](samples/balloons.ascii.pgm)
 
 
 # Suported Image Types
