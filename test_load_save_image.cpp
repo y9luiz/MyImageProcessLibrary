@@ -12,9 +12,9 @@ int main(int argc, char **argv)
         std::cout<<"./test_load_save_image <loaded_image> <writed_image>\n";
         exit(0);
     }
-    std::cout<<argv[2]<<"\n";
     MIL::Img imagem = MIL::imread(argv[1]);
-    MIL::imwrite(MIL::img_proc::Normalize(imagem),argv[2]);
-    //MIL::imwrite(MIL::img_proc::ImageEqualization(imagem),argv[2]);
+    MIL::Img normalized_img = MIL::img_proc::Normalize(imagem);
+    MIL::imwrite(normalized_img,argv[2]);
+    MIL::imwrite(MIL::img_proc::ImageEqualization(imagem),argv[2]);
     return 0;
 }

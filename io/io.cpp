@@ -34,7 +34,7 @@ MIL::Img MIL::imread(const char* filename)
 
 }
 
-void MIL::imwrite(MIL::Img image,const char* filename,MIL::ColorImageFormats code)
+void MIL::imwrite(MIL::Img  image,const char* filename,MIL::ColorImageFormats code)
 {
     std::ofstream file(filename);
     if(!file.is_open())
@@ -44,16 +44,16 @@ void MIL::imwrite(MIL::Img image,const char* filename,MIL::ColorImageFormats cod
     }
     if(code == MIL::GRAY_PGM || code == MIL::PGM)
     {
-        std::cout<<"chamando funcao\n";
+
         imwrite_ppm(image,file);
     }
     else{
         std::cout<<"invalid code "<<code<<"\n:"<<MIL::PGM;
     }
     file.close();
-    std::cout<<"finish\n";
+
 }
-void MIL::imwrite_ppm(MIL::Img image, std::ofstream & file)
+void MIL::imwrite_ppm(MIL::Img & image, std::ofstream & file)
 {
     int w = image.getWidth();
     int h = image.getHeight();
@@ -61,22 +61,24 @@ void MIL::imwrite_ppm(MIL::Img image, std::ofstream & file)
     file<<"#Criado por Luiz Felipe Maciel Correia\n";
     file<<w<<" "<<h<<"\n";
     file<<255<<"\n";
-    unsigned char  pdata[w*h*1*sizeof(u_char)];
-    memcpy(pdata,image.getData(),w*h*1*sizeof(u_char));
-     
+    //unsigned char  pdata[w*h*1*sizeof(u_char)];
+	
+    //memcpy(pdata,image.getData(),w*h*1*sizeof(u_char));;
+
     
     int cont_ =0;
     for(int i=0;i<h*w;i++)
     {
        if(i>0 && i%w==0)
        {
-           file<<(int)pdata[i]<<"\n";
+           file<<(int)image.getData()[i]<<"\n";
        }
        else{
-           file<<(int)pdata[i]<<" ";
+           file<<(int)image.getData()[i]<<" ";
        }
         
     }
+
     
     
 

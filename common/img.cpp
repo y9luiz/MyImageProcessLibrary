@@ -6,7 +6,6 @@
 MIL::Img::Img()
 {
     data = NULL;
-    std::cout<<"construiu "<<this<<"\n";
     nchannels =0;
     width=0;
     height =0;
@@ -74,5 +73,8 @@ int MIL::Img::getMinValue()
 }
 MIL::Img::~Img()
 {
-    
+    if(data!=NULL)
+    {
+        delete [] data;
+    }
 }

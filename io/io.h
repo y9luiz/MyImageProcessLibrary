@@ -6,8 +6,8 @@
 
 namespace MIL{
     MIL::Img imread(const char* filename);
-    void imwrite(MIL::Img,const char * filename,ColorImageFormats code=GRAY_PGM);
-    void imwrite_ppm(Img image, std::ofstream & file);
+    void imwrite(MIL::Img  image,const char * filename,ColorImageFormats code=GRAY_PGM);
+    void imwrite_ppm(Img &image, std::ofstream & file);
 };
 
 #endif

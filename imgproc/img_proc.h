@@ -3,7 +3,7 @@
 #include <common/common.h>
 namespace MIL{
     namespace img_proc{
-        MIL::Img Normalize(MIL::Img input);
+        MIL::Img Normalize(MIL::Img & input);
         MIL::Img ImageEqualization(MIL::Img input);
     }
 
