@@ -25,7 +25,7 @@ and the second one is equalized using the histogram information
 
 # Expected results
 ## Input example
-	![Alt text](https://github.com/y9luiz/MyImageProcessLibrary/blob/main/samples/balloons.ascii.pgm "Optional Title")
+	![Alt text](https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.tudogostoso.com.br%2Freceita%2F29124-bolo-simples.html&psig=AOvVaw2lx1YLTFCe-wHA5BanJhjF&ust=1601945674589000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCPC22emenOwCFQAAAAAdAAAAABAD "Optional Title")
 
 
 # Suported Image Types
