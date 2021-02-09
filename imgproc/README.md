@@ -5,9 +5,9 @@ image operations for the rest of the code
 
 # Future features
 
-Convolutional kernel operations
+## Convolutional kernel operations
 
-  ## overview abou it
+  ### An overview about it
   
     Convolutional operation is a mathematical operation that is very useful when we want to extract features,
     or make a filter operation in the spatial linear domain but the usual convolution is a little bit different
