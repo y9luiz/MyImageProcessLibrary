@@ -1,7 +1,14 @@
 # MyImageProcessLibrary
 Just a hobby project to open images and apply image operations
 
-
+# Supported image types
+ 
+ At this moment we are only accepting PGM image format
+ 
+ # Future features
+ 
+ Convolutional kernel filters 
+  
 # Building
 ```
 git clone https://github.com/y9luiz/MyImageProcessLibrary.git
